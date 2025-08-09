@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="flex flex-col w-full min-h-screen bg-white">
+    <!-- start Navabr -->
+    <nav
+      class="h-auto flex flex-row justify-between items-center w-full bg-white px-10 py-5"
+    >
+      <h3 class="text-2xl font-extrabold text-pink-600 uppercase">
+        sob <span class="text-gray-300">ready</span>
+      </h3>
+      <ul class="flex flex-row w-1/2 justify-center capitalize">
+        <li class="mx-5">
+          <a
+            class="no-underline visited:text-pink-600 visited:after:content-['+']"
+            href=""
+            >home</a
+          >
+        </li>
+        <li class="mx-5 flex flex-row justify-center">
+          <a
+            class="no-underline visited:text-pink-600 visited:after:content-['+']"
+            href=""
+            >category</a
+          >
+        </li>
+        <li class="mx-5">
+          <a
+            class="no-underline visited:text-pink-600 visited:after:content-['+']"
+            href=""
+            >shop</a
+          >
+        </li>
+        <li class="mx-5">
+          <a
+            class="no-underline visited:text-pink-600 visited:after:content-['+']"
+            href=""
+            >blog</a
+          >
+        </li>
+        <li class="mx-5">
+          <a
+            class="no-underline visited:text-pink-600 visited:after:content-['+']"
+            href=""
+            >page</a
+          >
+        </li>
+      </ul>
+      <div class="flex flex-row align-middle">
+        <div class="flex flex-row items-strech justify-center">
+          <input
+            class="bg-pink-100 px-5"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search..."
+          />
+          <input class="bg-pink-700 w-12 h-12" type="submit" value="" />
+        </div>
+        <a
+          class="bg-pink-100 w-12 h-12 mx-3 flex flex-col justify-center align-middle"
+          href=""
+          ><svg
+            class="user-svg my-0 mx-auto stroke-pink-700"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+              stroke="black"
+              stroke-width="null"
+              class="my-path stroke-pink-700"
+            ></path>
+            <path
+              d="M11.9998 14C9.15153 14 6.65091 15.3024 5.23341 17.2638C4.48341 18.3016 4.10841 18.8204 4.6654 19.9102C5.2224 21 6.1482 21 7.99981 21H15.9998C17.8514 21 18.7772 21 19.3342 19.9102C19.8912 18.8204 19.5162 18.3016 18.7662 17.2638C17.3487 15.3024 14.8481 14 11.9998 14Z"
+              stroke="black"
+              stroke-width="null"
+              class="my-path stroke-pink-700"
+            ></path></svg
+        ></a>
+        <a
+          class="bg-pink-100 w-12 h-12 flex flex-col justify-center align-middle"
+          href=""
+          ><svg
+            class="cart-svg my-0 mx-auto"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.7146 19.5C10.7146 20.3284 10.0239 21 9.17176 21C8.31967 21 7.62891 20.3284 7.62891 19.5"
+              stroke="black"
+              stroke-width="null"
+              stroke-linecap="round"
+              class="my-path stroke-pink-700"
+            ></path>
+            <path
+              d="M16.8865 19.5C16.8865 20.3284 16.1957 21 15.3436 21C14.4915 21 13.8008 20.3284 13.8008 19.5"
+              stroke="black"
+              stroke-width="null"
+              stroke-linecap="round"
+              class="my-path stroke-pink-700"
+            ></path>
+            <path
+              d="M3.51429 6L4.96114 13.7354C5.25319 15.2968 5.39921 16.0775 5.95475 16.5387C6.51029 17 7.30451 17 8.89296 17H15.6218C17.2103 17 18.0046 17 18.5601 16.5387C19.1157 16.0774 19.2617 15.2967 19.5537 13.7352L20.1146 10.7352C20.5248 8.54152 20.7299 7.44469 20.1301 6.72234C19.5303 6 18.4144 6 16.1827 6H3.51429ZM3.51429 6L3 3"
+              stroke="black"
+              stroke-width="null"
+              stroke-linecap="round"
+              class="my-path stroke-pink-700"
+            ></path></svg
+        ></a>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Hero section -->
+    <section class="flex flex-row w-full h-3/4 justify-center items-center">
+      <div class="flex flex-col w-1/2 h-full justify-center items-start px-10">
+        <h1 class="text-6xl font-semibold leading-[160%] -tracking-1 uppercase">
+          All You Need For Perfect
+          <span class="text-shadow-lg/30 text-shadow-fuchsia-500"
+            >Breakfast</span
+          >
+        </h1>
+        <p
+          class="text-gray-500 text-lg font-normal my-5 leading-[160%] -tracking-1"
+        >
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500
+        </p>
+        <div class="flex flex-row w-full justify-start items-center uppercase">
+          <a
+            class="bg-pink-600 text-white px-6 py-2 mt-5 hover:bg-pink-700 transition duration-300 cursor-pointer"
+          >
+            Buy now
+          </a>
+          <a
+            class="bg-white text-pink-700 px-6 py-2 mt-5 mx-5 border-2 hover:text-pink-700 transition duration-300 cursor-pointer"
+          >
+            See More
+          </a>
+        </div>
+      </div>
+      <img class="w-1/2 h-full bg-amber-400" src="" alt="" />
+    </section>
+    <!-- End Hero section -->
+  </body>
+</html>
