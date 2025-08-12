@@ -6,3 +6,72 @@ nav {
   display: flex;
   height: auto;
 }
+/* Start Slider */
+.slider-content {
+  position: relative;
+  z-index: 1;
+  padding: 0px 50px 0 50px;
+}
+.slider-btns {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  flex-direction: row;
+}
+
+.slider-btn {
+  border: 2px solid red;
+  cursor: pointer;
+}
+
+.slider-btn:hover {
+  background-color: red;
+}
+.slider-btn > svg:hover {
+  stroke: white;
+}
+
+/* End Slider */
+
+/* Start products */
+.products-section {
+  background-color: aquamarine;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  color: #666;
+}
+
+.categories {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.category {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.active-category {
+  color: red;
+}
+/* End Products */

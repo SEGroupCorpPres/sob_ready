@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="flex flex-col w-full min-h-screen bg-white">
-    <!-- start Navabr -->
+    <!-- Start Navabr -->
     <nav
       class="h-auto flex flex-row justify-between items-center w-full bg-white px-10 py-5"
     >
@@ -124,37 +124,100 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start Hero section -->
-    <section class="flex flex-row w-full h-3/4 justify-center items-center">
-      <div class="flex flex-col w-1/2 h-full justify-center items-start px-10">
-        <h1 class="text-6xl font-semibold leading-[160%] -tracking-1 uppercase">
-          All You Need For Perfect
-          <span class="text-shadow-lg/30 text-shadow-fuchsia-500"
-            >Breakfast</span
-          >
-        </h1>
-        <p
-          class="text-gray-500 text-lg font-normal my-5 leading-[160%] -tracking-1"
-        >
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500
-        </p>
-        <div class="flex flex-row w-full justify-start items-center uppercase">
-          <a
-            class="bg-pink-600 text-white px-6 py-2 mt-5 hover:bg-pink-700 transition duration-300 cursor-pointer"
-          >
-            Buy now
-          </a>
-          <a
-            class="bg-white text-pink-700 px-6 py-2 mt-5 mx-5 border-2 hover:text-pink-700 transition duration-300 cursor-pointer"
-          >
-            See More
-          </a>
+    <main class="flex flex-col w-full h-full justify-center items-center">
+      <!-- Start Hero section -->
+      <section class="flex flex-row w-full h-3/4 justify-center items-center">
+        <!-- slider btns -->
+        <div class="slider-btns">
+          <button class="slider-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="red"
+              class="size-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5 8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <button class="slider-btn active-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="red"
+              class="size-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m8.25 4.5 7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
         </div>
-      </div>
-      <img class="w-1/2 h-full bg-amber-400" src="" alt="" />
-    </section>
-    <!-- End Hero section -->
+        <!-- end slider btn -->
+        <!-- slider content -->
+        <div
+          class="slider-content flex flex-row w-full h-full justify-center items-center"
+        >
+          <div
+            class="slider-img flex flex-col w-1/2 h-full justify-center items-start px-10"
+          >
+            <h1
+              class="text-6xl font-semibold leading-[160%] -tracking-1 uppercase"
+            >
+              All You Need For Perfect
+              <span class="text-shadow-lg/30 text-shadow-fuchsia-500"
+                >Breakfast</span
+              >
+            </h1>
+            <p
+              class="text-gray-500 text-lg font-normal my-5 leading-[160%] -tracking-1"
+            >
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500
+            </p>
+            <div
+              class="flex flex-row w-full justify-start items-center uppercase"
+            >
+              <a
+                class="bg-pink-600 text-white px-6 py-2 mt-5 hover:bg-pink-700 transition duration-300 cursor-pointer"
+              >
+                Buy now
+              </a>
+              <a
+                class="bg-white text-pink-700 px-6 py-2 mt-5 mx-5 border-2 hover:text-pink-700 transition duration-300 cursor-pointer"
+              >
+                See More
+              </a>
+            </div>
+          </div>
+          <img class="w-1/2 h-full bg-amber-400" src="" alt="" />
+        </div>
+      </section>
+      <!-- End Hero section -->
+
+      <!-- Start Products Section -->
+      <section class="products-section">
+        <ul class="categories">
+          <li class="category active-category">fruits</li>
+          <li class="category">Vegatebles</li>
+          <li class="category">semi-finished</li>
+          <li class="category">bakery</li>
+          <li class="category">meat</li>
+          <li class="category">pasta</li>
+          <li class="category">sweets</li>
+        </ul>
+      </section>
+      <!-- End Products Section -->
+    </main>
   </body>
 </html>
