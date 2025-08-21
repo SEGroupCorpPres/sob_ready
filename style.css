@@ -258,4 +258,94 @@ nav {
   line-height: 100%;
   letter-spacing: 0%;
 }
+
 /* End Products */
+
+/* Start Fresh Food */
+.fresh-food-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 40px;
+  margin: 50px;
+}
+.fresh-food-images {
+  width: 50%;
+  height: auto;
+  display: flex;
+  transform: rotate(45deg);
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.images-box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.fresh-food-image {
+  width: calc(50% - 10px);
+  height: 230px;
+  object-fit: cover;
+  background-color: aqua;
+  border-radius: 5px;
+}
+.pointer-img {
+  width: 80px;
+  height: 80px;
+  background-color: #e21a43;
+}
+.fresh-food-content {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 20px;
+}
+.fresh-food-title {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #666666;
+  text-align: left;
+}
+
+.main-btn {
+  width: 200px;
+  height: 50px;
+  background-color: white;
+  color: #e21a43;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e21a43;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.main-btn:hover {
+  background-color: #e21a43;
+  color: white;
+}
+
+/* End Fresh Food */
